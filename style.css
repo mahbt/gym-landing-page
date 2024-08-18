@@ -1,0 +1,325 @@
+:root {
+  --primary-color: #333;
+  --secondary-color: #bdcf15;
+}
+
+/*Reset*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Main Styling */
+html,
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+h1,
+h2,
+h3 {
+  padding-bottom: 20px;
+}
+p {
+  margin: 10px 0;
+}
+/* Utility Classes*/
+.container {
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 20px;
+}
+.py-1 {
+  padding: 10px 0;
+}
+.py-2 {
+  padding: 20px 0;
+}
+.py-3 {
+  padding: 30px 0;
+}
+.text-primary {
+  color: var(--secondary-color);
+}
+.lead {
+  font-size: 20px;
+}
+.l-heading {
+  font-size: 40px;
+}
+.clr {
+  clear: both;
+}
+.bg-dark {
+  background: var(--primary-color);
+  color: #fff;
+}
+.bg-light {
+  background-color: #f4f4f4;
+  color: var(--primary-color);
+}
+.bg-primary {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  background: var(--primary-color);
+  color: #fff;
+  padding: 13px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.btn-light:hover {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+.btn-dark {
+  background: var(--primary-color);
+  color: #fff;
+}
+.btn-light {
+  background: #f4f4f4;
+  color: var(--primary-color);
+}
+.btn-primary {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+.btn-primary:hover {
+  opacity: 0.9;
+}
+/*Navbar*/
+#navbar {
+  background: var(--primary-color);
+  overflow: auto;
+}
+#navbar .logo {
+  float: left;
+  padding-top: 20px;
+}
+#navbar ul {
+  list-style: none;
+  float: right;
+}
+#navbar ul li {
+  float: left;
+}
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  background-color: #444;
+  color: var(--secondary-color);
+}
+/*Showcase*/
+#showcase {
+  background: url(./img/dumbble.jpg) no-repeat center center/cover;
+  max-height: 600px;
+  position: relative;
+  color: var(--primary-color);
+}
+#showcase::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(196, 196, 196, 0.4);
+}
+#showcase .showcase-content {
+  text-align: center;
+  padding: 170px 0;
+  position: relative;
+  z-index: 10;
+}
+#showcase h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+}
+#showcase h1 span {
+  font-size: 75px;
+}
+#showcase p {
+  padding-bottom: 20px;
+  line-height: 1.7em;
+}
+
+#home-info {
+  display: flex;
+}
+#home-info .info-img {
+  width: 50%;
+
+  background: url(./img/Paar\ workout.jpg) no-repeat bottom center/cover;
+}
+#home-info .info-content {
+  width: 50%;
+
+  text-align: center;
+  padding: 100px 30px 50px;
+}
+#home-info .info-content p {
+  padding-bottom: 30px;
+}
+/*Features*/
+.box {
+  text-align: center;
+  width: 33.3%;
+  float: left;
+  padding: 50px;
+}
+.box i {
+  padding-bottom: 10px;
+}
+/* About page*/
+#about-info .info-left {
+  float: left;
+  width: 50%;
+  min-height: 100%;
+}
+#about-info .info-right {
+  float: right;
+  width: 50%;
+  min-height: 100%;
+}
+#about-info .info-right img {
+  display: block;
+  margin: auto;
+  width: 70%;
+  border-radius: 50%;
+}
+/* Testimonial*/
+#testimonials {
+  background: url(./img/Facilities.jpg) no-repeat center center/cover;
+  min-height: 600px;
+  padding-top: 100px;
+}
+#testimonials h2 {
+  color: #f4f4f4;
+  text-align: center;
+  padding-bottom: 40px;
+}
+#testimonials .testimonial {
+  border-radius: 5px;
+  opacity: 0.9;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+#testimonials .testimonial img {
+  border-radius: 50%;
+  width: 100px;
+  float: left;
+  margin-right: 20px;
+}
+/*contact page*/
+#contact-form .form-group {
+  margin-bottom: 20px;
+}
+#contact-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px #ddd solid;
+}
+#contact-form textarea {
+  height: 200px;
+}
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: 1px var(--secondary-color) solid;
+}
+
+/*footer*/
+#main-footer {
+  background-color: #444;
+  color: #fff;
+  text-align: center;
+  padding: 20px 30px;
+}
+#main-footer a {
+  color: var(--secondary-color);
+}
+/* Media Query */
+@media (max-width: 768px) {
+  #navbar .logo {
+    font-size: 1rem;
+  }
+  #showcase .showcase-content {
+    padding: 50px 0 100px;
+  }
+  #showcase h1 {
+    font-size: 3rem;
+    line-height: 1.2em;
+  }
+  #showcase h1 span {
+    font-size: 3.8rem;
+  }
+  #showcase p {
+    display: none;
+  }
+  #home-info {
+    display: flex;
+    flex-direction: column;
+  }
+  #home-info .info-img {
+    width: 100%;
+    height: 250px;
+    background: url(./img/Paar\ workout.jpg) no-repeat center center/cover;
+  }
+  #home-info .info-content {
+    width: 100%;
+    padding: 50px 30px;
+  }
+  #features,
+  #contact-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .box {
+    width: 100%;
+    float: none;
+  }
+
+  #about-info .container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #about-info .info-left {
+    width: 100%;
+  }
+  #about-info .info-right {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #about-info .info-left .l-heading {
+    text-align: center;
+  }
+  #testimonials {
+    padding-top: 50px;
+  }
+  #testimonials h2 {
+    line-height: 1.2;
+  }
+  #contact-info .box:nth-last-of-type(2) {
+    padding: 0;
+  }
+}
