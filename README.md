@@ -27,7 +27,7 @@
 
 ### Links
 
-- Live Site URL: [Product Preview Card](https://mahbt.github.io/gym-landing-page/)
+- Live Site URL: [Gym Landing Page](https://mahbt.github.io/gym-landing-page/)
 
 ## My process
 
