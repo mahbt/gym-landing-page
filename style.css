@@ -164,7 +164,7 @@ p {
 #home-info .info-img {
   width: 50%;
 
-  background: url(./img/Paar\ workout.jpg) no-repeat bottom center/cover;
+  background: url(./img/Paar\ workout.jpg) no-repeat center center/cover;
 }
 #home-info .info-content {
   width: 50%;
